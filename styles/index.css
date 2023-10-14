@@ -1,0 +1,969 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+    font-family: Raleway, sans-serif;
+    overflow-x: hidden;
+    margin: auto;
+    max-width: 1440px;
+}
+
+/* Responsive pour les écrans d'ordinateurs (> 1024px) */
+
+    /* Ajoutez ici les règles CSS spécifiques aux écrans d'ordinateurs */
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #logo {
+        height: 22px;
+        width: 64px;
+        margin-top: 41px;
+        margin-left: 3%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #logo img {
+        width: 100%;
+    }
+
+    /* Partie hover Hébergement et activités */
+
+    #hebergactiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        cursor: pointer;
+        margin-top: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .lia {
+        margin-right: 28%;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .border {
+        border-top: 3px solid transparent;
+        width: 112px;
+        
+    }
+
+    .borderActiv {
+        width: 61px;
+        margin-right: 21%;
+    }
+
+    .border:hover {
+        border-top: 3px solid #0065FC;
+    }
+
+    .choix {
+        display: block;
+        padding: 16px 0px 0px;
+        width: fit-content;
+    }
+
+    .choix:hover {
+        color: #0065FC;
+    }
+
+    /* Partie Introduction avec une barre de recherche */
+
+    #sectionIntro {
+        margin-left: 3%;
+    }
+
+    #intro {
+        margin-top: 55px;
+    }
+
+    #trouveLogement {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    #centre-nature {
+        margin-top: -10px;
+    }
+
+    #barreSearch {
+        display: flex;
+        margin-top: 22px;
+        width: 377px;
+    }
+
+    #divSearch {
+        background-color: #e8e8e8;
+        height: 50px;
+        width: 50px;
+        border: none;
+        border-radius: 12px 0 0 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #iconSearch {
+        width: 10px;
+        height: 18px;
+    }
+
+    #search {
+        height: 50px;
+        width: 185px;
+        border: 2px solid #F2F2F2;
+        font-weight: 700;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #buttonSearch {
+        background-color: #0065FC;
+        color: #FFF;
+        border: none;
+        border-radius: 0px 10px 10px 0;
+        height: 49px;
+        width: 120px;
+        font-weight: bold;
+        font-size: 0.96rem;
+        cursor: pointer;
+    }
+
+    #btniconesearch {
+        display: none;
+        background-color: #0065FC;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 0 10px 10px 0;
+        height: 49px;
+        width: 60px;
+        cursor: pointer;
+    }
+
+    /* Partie Filtres avec différents filtres qui s'animent avec un hover */
+
+    #filtres {
+        margin-top: 10px;
+        margin-bottom: 13px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #filtre {
+        margin-top: 32px;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    .listFiltre {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+        margin-top: 13px;
+    }
+
+    .divOption {
+        border: 2px solid #D9D9D9;
+        border-radius: 23px;
+        cursor: pointer;
+        margin: 6px;
+        height: 42px;
+        width: 164px;
+    }
+
+    .divOption:hover {
+        background-color: #DEEBFF;
+    }
+
+    .divFamilial {
+        width: 122px;
+    }
+
+    .divIconOption {
+        display: flex;
+        flex-direction: row;
+        margin-top: 12px;
+        margin-left: 19px;
+    }
+
+    .divIconOption:hover {
+        background-color: #DEEBFF;
+    }
+
+    .option {
+        font-size: 17px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .icon {
+        font-size: 18px;
+        margin-right: 6px;
+        margin-top: 0px;
+        color: #0065FC;
+    }
+
+    /* Partie Information avec une icon et une phrase */
+
+    #important {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0%;
+        margin-bottom: 20px;
+    }
+
+    #infoImportant {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .divInfo {
+        height: 23px;
+        width: 24px;
+        border-radius: 100%;
+        border: 1px solid #D9D9D9;
+    }
+
+    .info {
+        margin-left: 10px;
+        margin-top: 5px;
+        font-size: 13px;
+        color: #0065FC;
+    }
+
+    #texte {
+        font-size: 16px;
+        margin-left: 8px;
+        margin-top: 5px;
+    }
+
+/* Ensemble de partie hébergement et hébergement les plus populaires */
+
+    .hebergPopulaire {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 34px;
+    }
+
+    a {
+        text-decoration: none;
+        
+    }
+
+/* Partie avec les Hébergements */
+
+    #fondHerbergement {
+        background-color: #F2F2F2;
+        height: 580px;
+        width: 876px;
+        border-radius: 15px;
+        margin-bottom: 55px;
+        margin-right: 1%;
+    }
+
+    #destination {
+        padding-top: 13px;
+        margin-left: 3%;
+        margin-bottom: 0;
+        font-size: 22px;
+    }
+
+    .reservation {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .hebergement {
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        height: 192px;
+        width: 29%;
+        box-shadow: #F2F2F2 5px 5px 5px;
+        margin-top: 30px;
+        min-width: 195px;
+        cursor: pointer;
+    }
+
+    .hebergMarginLeft {
+        margin-left: 1%;
+        margin-right: 0.8%;
+    }
+
+    .hebergMarginRight {
+        margin-right: 1%;
+        margin-left: 0.8%;
+    }
+
+    .img {
+        margin-top: 5px;
+        margin-left: 5px;
+        height: 108px;
+        width: 96%;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+    }
+
+    .titre {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-left: 7%;
+
+    }
+
+    .sous-titre {
+        font-size: 14px;
+        margin-top: -11px;
+        margin-left: 7%;
+    }
+
+    .star {
+        display: flex;
+        flex-direction: row;
+        margin-top: -7px;
+        margin-left: 7%;
+        color: #0065FC;
+        font-size: 13px;
+    }
+
+    .starDif {
+        color: #F2F2F2;
+    }
+
+    #plus {
+        margin-top: 30px;
+        margin-left: 28px;
+        font-size: 1rem;
+    }
+
+/* Partie Hébergement les plus populaires */
+
+    #fondPopulaires {
+        background-color: #F2F2F2;
+        height: 560px;
+        width: 430px;
+        border-radius: 20px;
+        padding-top: 20px;
+        margin-right: 48px;
+        margin-left: 1%;
+    }
+
+    #divPopulaires {
+        display: flex;
+        justify-content: space-between;
+        width: 92%;
+    }
+
+    #pop {
+        margin-left: 8%;
+        margin-top: 12px;
+        margin-bottom: 29px;
+        font-size: 22px;
+    }
+
+    .graph {
+        color: #0065FC;
+        font-size: 18px;
+        margin-top: 13px;
+    }
+
+    .hebergPop {
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        height: 144px;
+        width: 85%;
+        display: flex;
+        min-width: 264px;
+        margin: auto auto 17px;
+        cursor: pointer;
+    }
+
+    .imgPop {
+        border-radius: 20px 0px 0px 20px;
+        margin-left: 1.5%;
+        margin-top: 4.5px;
+        height: 135px;
+        width: 110px;
+        object-fit: cover;
+    }
+
+    .hebergPopContent {
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .titreHotel {
+        font-size: 16px;
+    }
+
+    .prix {
+        margin-top: -13px;
+        font-size: 14px;
+    }
+
+    .starPop {
+        display: flex;
+        flex-direction: row;
+        color: #0065FC;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+/* Partie Activités Marseille */
+
+    #activMarseille {
+        margin-left: 6%;
+        margin-bottom: 34px;
+    }
+
+    #divActivités {
+        display: flex;
+        flex-direction: row;
+        margin-left: 56px;
+        margin-bottom: 80px;
+        justify-content: space-around;
+    }
+
+    .activ {
+        border-radius: 20px 20px 20px 20px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 3px 15px 0px #0000001A;
+        height: 425px;
+        width: 21%;
+        max-width: 350px;
+        cursor: pointer;
+    }
+
+    .marginActiv {
+        margin-right: 64px;
+    }
+
+    .imgActiv {
+        height: 363px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+    }
+
+    .titreActiv {
+        margin-left: 7%;
+        margin-top: 18px;
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    .h3titreActiv {
+        width: 85%;
+        margin-top: 10px;
+    }
+
+/* Partie Footer */
+
+    #footer {
+        background-color: #F2F2F2;
+        height: 192px;
+        width: 93.4%;
+        margin-left: 2.8%;
+    }
+
+    #footerDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .ulFooter {
+        flex: 0 0 30%;
+        width: 30%;
+        list-style: none;
+        margin-top: 38px;
+    }
+
+    .h4Footer {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .liFooter {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+/* Responsive pour les tablettes (768px à 1024px) */
+@media screen and (max-width: 1024px) {
+
+    /* Ajoutez ici les règles CSS spécifiques aux tablettes */
+
+    #logo {
+        margin-left: 4%;
+    }
+
+    /* Partie Introduction */
+
+    #sectionIntro {
+        margin-left: 4%;
+    }
+
+    /* Partie Filtre */
+
+    #filtres {
+        flex-direction: column;
+    }
+
+    #filtre {
+        margin-bottom: 0;
+    }
+
+    .listFiltre {
+        padding-left: 0;
+    }
+
+    .divEco {
+        margin-left: 0;
+    }
+
+    .divOption {
+        border-radius: 27px;
+    }
+
+    .option {
+        font-size: 17px;
+    }
+
+    .divIconOption {
+        margin: 11px 18px 10px;
+    }
+
+    /* Ensemble partie Hébergement et Hébergement les plus populaires */
+
+    .hebergPopulaire {
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 0;
+    }
+
+    /* Partie Hébergement */
+
+    #fondHerbergement {
+        width: 92%;
+        height: 580px;
+        margin: auto auto 50px;
+        min-width: 730px;
+    }
+
+    /* Partie Hébergement les plus populaires */
+
+    #fondPopulaires {
+        height: 248px;
+        width: 92%;
+        margin: auto auto 55px;
+        min-width: 730px;
+    }
+
+    #divPopulaires {
+        width: 96%;
+    }
+
+    #pop {
+        margin-left: 4%;
+    }
+
+    .hebergPop {
+        height: 155px;
+        width: 30%;
+        margin-right: 0;
+        margin-left: 0;
+        min-width: 210px;
+    }
+
+    .marginHotel {
+        margin-left: 3.5%;
+    }
+
+    /*.marginRHotel {*/
+    /*    margin-right: 3%;*/
+    /*    margin-left: 3%;*/
+    /*}*/
+
+    .imgPop {
+        height: 144px;
+        width: 92px;
+    }
+
+    #divHebergPop {
+        display: flex;
+        flex-direction: row;
+        gap: 1%;
+    }
+
+    /* Partie Activités Marseille */
+
+    #hebergactiv {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #activMarseille {
+        margin-left: 7%;
+    }
+
+    #divActivités {
+        margin-left: 50px;
+        gap: 1%;
+    }
+
+    .activ {
+        height: 260px;
+        width: 20%;
+        min-width: 174px;
+    }
+
+    .marginActiv {
+        margin-right: 50px;
+    }
+
+    .imgActiv {
+        height: 195px;
+        width: 100%;
+    }
+    .titreActiv {
+        margin-top: 20px;
+        width: 87%;
+    }
+
+    .h3titreActiv {
+        margin-top: 10px;
+    }
+
+    /* Partie Footer */
+
+    #footer {
+        width: 92%;
+        height: 192px;
+        margin-left: 4%;
+    }
+
+    .ulFooter {
+        padding-left: 25px;
+    }
+}
+
+/* Responsive pour le mobile (< 768px) */
+@media screen and (max-width: 767px) {
+
+    /* Ajoutez ici les règles CSS spécifiques aux téléphones portables */
+
+    /* Partie Header (Logo et Hover Hébergement / Activités */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #logo {
+        margin: 5% auto auto;
+    }
+
+    #hebergactiv {
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .border {
+        border-bottom: 3px solid #F2F2F2;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+
+    .border:hover {
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+
+    .choix {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Partie Barre de recherche */
+
+    #buttonSearch {
+        display: none;
+    }
+
+    #btniconesearch {
+        display: inline-block;
+        background-color: #0065FC;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 14px;
+        height: 49px;
+        width: 50px;
+        cursor: pointer;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-left: -14px;
+    }
+
+    /* Partie Filtre */
+
+    .listFiltre {
+        padding-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .divOption {
+        width: 128px;
+    }
+
+    .divIconOption {
+        margin: 13px 13px 10px;
+    }
+
+    .divRomantique {
+        margin-left: 0;
+    }
+
+    .icon {
+        font-size: 14px;
+        margin-right: 4px;
+    }
+
+    .option {
+        font-size: 14px;
+    }
+
+    /* Partie Information */
+
+    .divInfo {
+        width: 27px;
+    }
+
+    #texte {
+        width: 85%;
+    }
+
+    /* Ensemble partie Hébergement et partie Hébergement les plus populaires */
+
+    .hebergPopulaire {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    /* Partie Hébergement les plus populaires */
+
+    #fondPopulaires {
+        background-color: #F2F2F2;
+        height: 582px;
+        min-width: 100%;
+        border-radius: 0;
+        margin-bottom: 5px;
+    }
+
+    #divPopulaires {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 92%;
+    }
+
+    #pop {
+        margin-left: 7%;
+        font-size: 22px;
+    }
+
+    #divHebergPop {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hebergPop {
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        height: 145px;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .imgPop {
+        height: 136px;
+        width: 105px;
+        margin-left: 1.5%;
+        margin-top: 4px;
+    }
+
+    .hebergPopContent {
+        margin-left: 3%;
+    }
+
+    /* Partie Hébergement */
+
+    #fondHerbergement {
+        background-color: transparent;
+        height: auto;
+        min-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #destination {
+        margin-left: 5%;
+    }
+
+    .reservation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #article1{
+        order: 1;
+    }
+
+    #article2{
+        order: 6;
+    }
+
+    #article3{
+        order: 3;
+    }
+
+    #article4{
+        order: 4;
+    }
+
+    #article5{
+        order: 2;
+    }
+
+    #article6{
+        order: 5;
+    }
+
+    .hebergement {
+        height: 202px;
+        width: 91%;
+        margin-top: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    .img {
+        height: 115px;
+        width: 97%;
+        margin-right: auto;
+        margin-left: 1.5%;
+    }
+
+    .titre {
+        margin-top: 7px;
+        margin-left: 4%;
+    }
+
+    .sous-titre {
+        margin-top: -9px;
+        margin-left: 4%;
+    }
+
+    .star {
+        margin-left: 4%;
+    }
+
+    .starDif {
+        color: #F2F2F2;
+    }
+
+    #plus {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    /* Partie Activités Marseille */
+
+    #activité {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    #activMarseille {
+        margin-left: 6%;
+    }
+
+    #divActivités {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-bottom: 53px;
+    }
+
+    .activ {
+        height: 216px;
+        width: 88%;
+        max-width: 93%;
+        margin-bottom: 22px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imgActiv {
+        height: 160px;
+        width: 100%;
+    }
+
+    .titreActiv {
+        margin-left: 5%;
+        margin-top: 16px;
+    }
+
+    /* Partie Footer */
+
+    #footer {
+        background-color: #F2F2F2;
+        height: auto;
+        width: 102%;
+        margin-left: -8px;
+    }
+
+    #footerDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h4Footer {
+        width: 168px;
+    }
+
+    .liFooter {
+        width: 195px;
+    }
+
+}
